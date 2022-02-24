@@ -1,0 +1,12 @@
+<%- include('header') %>
+<link href="/styles.css" rel="stylesheet" />
+
+<div class="result">
+    <% if(error) { %>
+         <%= error %>
+    <%} else { %>
+        O Valor da sua Cotação: R$ <%= conversao %>
+    <% } %>
+</div>
+
+<%- include('footer') %>  
